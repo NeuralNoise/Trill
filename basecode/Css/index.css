@@ -1,0 +1,65 @@
+body {
+  top: 0;
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+  background: rgb(232, 231, 227);
+}
+
+header {
+  top: 0;
+  margin: 0px;
+  width: 100%;
+  height: 70px;
+  background: rgb(77, 83, 108);
+  color: white;
+  padding: 10px;
+}
+
+footer {
+  bottom: 0;
+  height: 20px;
+  background: rgb(227, 227, 227);
+  width: 100%;
+}
+
+.registerForm {
+  color: white;
+}
+
+header > .loginForm {
+  position: absolute;
+  right: 200px;
+  padding-top: 30px;
+}
+
+.icon {
+  position: absolute;
+}
+
+header > .trill {
+  font-family: 'Candal', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  position: absolute;
+  letter-spacing: 3px;
+  left: 200px;
+  padding-top: 5px;
+}
+
+.loginForm form input[type="text"] , .loginForm form input[type="password"]{
+  padding: 4px;
+  border: 1px solid black;
+}
+
+.loginForm form input[type="submit"] {
+  border-radius: 2px;
+  font-weight: bold;
+  border: none;
+  padding: 4px;
+  background: rgb(232, 231, 227);
+}
