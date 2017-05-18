@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  font-family: 'Arial', sans-serif;
+  font-style: normal;
+  font-size: 16;
+  margin: 0;
+  overflow: scroll;
+  grid-template-columns: 25% auto 25%;
+  grid-template-rows: 40px 80px auto;
+  background: rgb(231, 231, 231);
+}
+
+.navBar {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  background: rgb(77, 83, 108);
+}
+
+.empty {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: yellow;
+}
+
+.empty form textarea {
+  height: 50px;
+  width: 80%;
+}
+.empty form textarea:focus {
+  height: 60px;;
+  width: 80%;
+}
+
+
+.feed {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background: rgb(231, 231, 231)
+}
+
+.post {
+  border: 2px solid rgb(222, 222, 222);
+  background: white;
+  border-radius: 10px;
+  margin: 10px;
+}
