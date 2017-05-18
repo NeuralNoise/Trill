@@ -8,27 +8,32 @@
 		<title> Trill </title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="Js/search.js"></script>
-		<script type="text/javascript" src="Js/post.js"></script>
  		<link rel='stylesheet' type='text/css' href="Css/feed.css"/>
 	</head>
 
 	<body>
 	<div class="navbar">
-		<form action="feed.php" method="get">
-			<input type="text" name="search" placeholder="Search..." autocomplete="off" onkeyup="searchq();">
+		<div class="searchBar">
+		<form action="search.php" method="get">
+			<input type="text" name="search" placeholder="Search..." autocomplete="off">
 			<input type="submit" value=">>">
 		</form>
+		</div>
 	</div>
 
 	<div class="empty">
+		<div class="emptyy">
 		<form action="Core/post.php" method="post">
 			<textarea name="newPost" placeholder="Write about your day..."></textarea>
 			<input type="submit" name="Post" value="Post">
 		</form>
 	</div>
+	</div>
 
 	<div class="feed">
-			<?php  $query = "SELECT * FROM posts ORDER BY id DESC";
+			<?php
+
+			$query = "SELECT * FROM posts ORDER BY id DESC";
 
 			 $stmt = $db->prepare($query);
 			 $result = $stmt->execute();
@@ -37,9 +42,15 @@
 				 $username = $row['username'];
 				 $message = $row['message'];
 
-				 $post = "<div class='post'><h1>".$username."</h1>".$message."</div>";
+				 $post = "<div class='post'><h1><a name='profile' href='profile.php?u=$username'>".$username."</a></h1>".$message."</div>";
 				 echo $post;
+
+				 if(profile == true){
+					 $_SESSION['profile'] = $username;
+				 }
 			 }
+
+
 		 ?>
 		</div>
 

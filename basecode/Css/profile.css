@@ -19,48 +19,6 @@ body {
   position: absolute;
   left: 300px;
 }
-
-.empty {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background: rgb(231, 231, 231);
-}
-
-.emptyy {
-  border: 2px solid rgb(222, 222, 222);
-  background: white;
-  border-radius: 10px;
-  margin: 5px;
-  height: 80px;
-}
-
-.empty > .emptyy form textarea {
-  margin: 10px;
-  width: 500px;
-  height: 50px;
-  border: 1px dashed grey;
-  border-radius: 4px;
-}
-
-.emptyy form input[type="submit"] {
-  position: absolute;
-}
-
-.feed {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  background: rgb(231, 231, 231);
-  overflow: scroll;
-}
-
-.post {
-  border: 2px solid rgb(222, 222, 222);
-  background: white;
-  border-radius: 10px;
-  margin: 5px;
-}
-
-
 .navBar > .searchBar form input[type="text"]{
   padding: 5px;
   border: 1px solid rgb(222, 222, 222);

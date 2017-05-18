@@ -77,6 +77,9 @@ body {
   "a b b b b"
   "a b b b b"
   "a b b b b"
+  "a b b b b"
+  "a b b b b"
+  "a b b b b"
   "f f f f f"
 }
 
@@ -103,6 +106,7 @@ body {
 .registerForm {
   background: rgb(231, 231, 231);
   grid-area: b;
+
 }
 
 
@@ -127,4 +131,77 @@ label {
   position: absolute;
   margin: 15px;
   top: 70px;
+}
+
+.registerForm input[name="firstname"], .registerForm input[name="lastname"] {
+  width: 150px;
+
+  padding: 5px;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.registerForm input[name="username"], .registerForm input[name="password"], .registerForm input[name="email"] {
+  width: 325px;
+
+  padding: 5px;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.rform {
+  position: absolute;
+  right: 150px;
+  top: 50px;
+}
+.regrac {
+  position: absolute;
+  left: 350px;
+  top: 100px;
+}
+
+
+.registerForm input[type="submit"] {
+  border: none;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 3px;
+  background: rgb(231, 231, 231);
+  font-style: bold;
+  margin: 10px;
+}
+
+.loginForm input[type="submit"] {
+  border: none;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 3px;
+  background: rgb(77, 83, 108);
+  font-style: bold;
+  margin: 10px;
+  color: white;
+}
+
+.loginForm input[type="submit"]:hover {
+  border: none;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 3px;
+  background: rgb(231, 231, 231);
+  font-style: bold;
+  margin: 10px;
+  color: black;
+}
+
+.registerForm input[type="submit"]:hover {
+  border: none;
+  border: 1px solid rgb(69, 69, 69);
+  border-radius: 3px;
+  background: rgb(77, 83, 108);
+  font-style: bold;
+  margin: 10px;
+  color: white;
+}
+
+.footer{
+  text-align: center;
 }

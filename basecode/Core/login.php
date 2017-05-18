@@ -3,9 +3,6 @@
  require("common.php");
  // Connection to db
 
-$submitted_username = '';
-
-
 if(!empty($_POST)) {
 
     $login_ok = false;
@@ -55,9 +52,6 @@ if(!empty($_POST)) {
     else
     {
         $failed ="Login Failed.";
-
-        $submitted_username = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
-
 
     }
 }

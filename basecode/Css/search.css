@@ -4,6 +4,7 @@ body {
   font-style: normal;
   font-size: 16;
   margin: 0;
+  overflow: scroll;
   grid-template-columns: 25% auto 25%;
   grid-template-rows: 40px 80px auto;
   background: rgb(231, 231, 231);
@@ -20,46 +21,12 @@ body {
   left: 300px;
 }
 
-.empty {
+.searchRes {
   grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  background: rgb(231, 231, 231);
+  grid-row: 2 / 4;
+  /*background: rgb(231, 231, 231)*/
+  background: green;
 }
-
-.emptyy {
-  border: 2px solid rgb(222, 222, 222);
-  background: white;
-  border-radius: 10px;
-  margin: 5px;
-  height: 80px;
-}
-
-.empty > .emptyy form textarea {
-  margin: 10px;
-  width: 500px;
-  height: 50px;
-  border: 1px dashed grey;
-  border-radius: 4px;
-}
-
-.emptyy form input[type="submit"] {
-  position: absolute;
-}
-
-.feed {
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
-  background: rgb(231, 231, 231);
-  overflow: scroll;
-}
-
-.post {
-  border: 2px solid rgb(222, 222, 222);
-  background: white;
-  border-radius: 10px;
-  margin: 5px;
-}
-
 
 .navBar > .searchBar form input[type="text"]{
   padding: 5px;
@@ -76,4 +43,13 @@ body {
   background: white;
   border-radius: 3px;
   width: 50px;
+}
+
+.home {
+  font-family: 'Candal', sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  position: absolute;
 }
