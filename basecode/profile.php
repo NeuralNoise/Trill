@@ -2,7 +2,6 @@
   require("Core/common.php");
 
   $profile = $_GET['u'];
-  echo $profile;
  ?>
 <html>
 <head>
@@ -22,5 +21,25 @@
   </form>
   </div>
 
+  <div class="posts">
+    <?php
+
+    $query = "SELECT * FROM posts WHERE username = :username ORDER BY id DESC";
+
+    $query_params = array(
+      ':username' => $username,
+    );
+     $stmt = $db->prepare($query);
+     $result = $stmt->execute($query_params);
+
+     while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+       $username = $row['username'];
+       $message = $row['message'];
+
+       $post = "<div class='post'><h1><a name='profile' href='profile.php?u=$username'>".$username."</a></h1>".$message."</div>";
+       echo $post;
+}
+   ?>
+  </div>
 </div>
 </html>

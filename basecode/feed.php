@@ -54,9 +54,5 @@
 		 ?>
 		</div>
 
-		<!-- <div id="output">
-
-		</div> -->
-
 		</body>
 </html>
