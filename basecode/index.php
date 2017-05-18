@@ -26,7 +26,7 @@
       </div>
 
     <div class="registerForm">
-      <a href="index.php" ><img src="register.jpg" class="regrac" alt="Raccoon" style="width:300px;height:300px;"></a>
+      <a href="index.php" ><img src="register.jpg" class="regrac" alt="Raccoon" width="400px" height="400px"></a>
       <form action="Core/register.php" method="post" class="rform">
         <h1>Sign up now</h1>
         <p>You'll love raccoons</p>
@@ -44,7 +44,8 @@
     </div>
 
     <div class="footer">
-      <p id="credits">Designed by <b>"the Danimal"</b>.  "We the best CSS, Another One" - <i>The Danimal</i>.</p>
+      <p id="credits">Designed by <b>"the Danimal"</b></p>
+      <p>Copyright (c) 2017 Copyright Holder All Rights Reserved.</p>
     </div>
   </body>
 </html>

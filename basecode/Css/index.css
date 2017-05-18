@@ -80,6 +80,9 @@ body {
   "a b b b b"
   "a b b b b"
   "a b b b b"
+  "a b b b b"
+  "a b b b b"
+  "a b b b b"
   "f f f f f"
 }
 
@@ -161,7 +164,6 @@ label {
   left: 350px;
   top: 100px;
 }
-
 
 .registerForm input[type="submit"] {
   border: none;

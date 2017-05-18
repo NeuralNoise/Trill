@@ -3,6 +3,8 @@
 require("Core/common.php");
 // Connection to db
 
+$name = array_values($_SESSION['user']);
+
 $output = '';
 
 if(!empty($_GET['search'])) {
@@ -16,7 +18,7 @@ if(!empty($_GET['search'])) {
     $count = $stmt->rowCount();
 
     if($count == 0) {
-      $output = "No result.";
+      $output = "<div class='unknown'> No result. </div>";
     }
     else {
 
@@ -25,7 +27,7 @@ if(!empty($_GET['search'])) {
         $fname = $row['firstname'];
         $lname = $row['lastname'];
 
-        $output .= "<div><a href='profile.php?u=$username'>".$fname.' '.$lname."</a></div>";
+        $output .= "<div class='result'><a href='profile.php?u=$username'>".$fname.' '.$lname."</a></div>";
 
       }
    }
@@ -50,6 +52,8 @@ if(!empty($_GET['search'])) {
 	<body>
 	<div class="navbar">
     <a href="feed.php" class="home"> Home </a>
+    <a href='profile.php?u=<?php echo $name[1]?>' class="prof"> <?php echo $name[1]; ?> </a>
+    <a href='Core/logout.php' class="logout"> Log Out </a>
     <div class="searchBar">
 		<form action="search.php" method="get">
 			<input type="text" name="search" placeholder="Search..." autocomplete="off">
